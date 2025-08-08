@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Rakshabandhan</title>
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body {
+    background-color: #fff8e1;
+    font-family: 'Comfortaa', 'varela round', sans-serif;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    max-width: 600px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.headerRakhi {
+    height: 100px;
+    position: absolute;
+    top: 10px;
+}
+
+.rakshaHeading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    position: relative;
+    background-color: #fff8e1;
+    box-shadow: 0 0 10px #fff8e1;
+    color: #f7c516;
+}
+
+.thread {
+    width: 30%;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.homeSecRakhiMainPart {
+    height: 40%;
+    position: absolute;
+    z-index: 1;
+    animation: spin 5s linear infinite;
+}
+
+.homeSecRakhiThread {
+    height: 100%;
+    position: absolute;
+}
+
+.homeSecRakhi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    right: -50px;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.happyRakshaDay {
+    font-size: 40px;
+    font-family: 'great vibes', cursive;
+    color: #f7c516;
+    text-shadow: 0 0 10px #f7c516;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 43%;
+}
+
+.rakshabandhan {
+    color: #a31da1;
+    text-shadow: 0 0 10px #a31da1;
+    display: block;
+}
+
+.wish {
+    background-color: #a31da1;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #f7c516;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.wish h2 {
+    color: #f7c516;
+    text-shadow: 0 0 10px #f7c516;
+}
+
+.myName {
+    background-color: #f7c516;
+    box-shadow: 0 3px 10px #f7c6168c;
+    width: max-content;
+    align-self: center;
+    color: #fff;
+    text-shadow: 0 0 2px #a31da1;
+    font-weight: 1000;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+form {
+    margin-top: auto;
+    background-color: #f7c516;
+    border: 2px solid #a31da1;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#homeInfo {
+    color: #a31da1;
+    font-weight: 1000;
+    font-family: 'varela round', 'comfortaa', sans-serif;
+}    
+
+#agreeAsSister ~ label {
+    color: #000;
+} 
+
+#sister {
+    font-weight: bold;
+}
+
+#viewButton {
+    text-align: center;
+    width: max-content;
+    align-self: center;
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #a31da1;
+    box-shadow: 0 0 10px #fff;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#viewButton:disabled {
+    opacity: 0.5;
+}
+
+
+
+#sisSpecial {
+    display: none;
+}
+
+#sisSpecial h2 {
+    margin-top: 30px;
+    color: #a31da1;
+}
+
+#rakhiInHand {
+    height: 300px;
+    rotate: 90deg;
+    position: absolute;
+    z-index: 1;
+    margin-top: -120px;
+    translate: -100%;
+    transition: translate 0.5s ease-in-out;
+}
+
+#rakhiInHand.active {
+    translate: calc(100% - 290px);
+}
+
+#handImg {
+    height: 300px;
+    rotate: 90deg;
+    position: relative;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.giftPlusInfo {
+    background-color: #f7c516;
+    color: #931b91;
+    padding: 20px 15px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.giftPlusInfo p {
+    font-weight: bold;
+    text-align: center;
+}
+
+#yourGift {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: #a31da1;
+    font-weight: bold;
+    box-shadow: 0 0 10px #fff;
+    background-color: #fff;
+}
+
+#yourGift:disabled {
+    opacity: 0.5;
+}
+</head>
+
+<body>
+    <header>
+        <img src="https://i.ibb.co/b5dbD0y/thread.png" alt="thread" class="thread1 thread">
+        <img src="https://i.ibb.co/9qnC3Nw/Header-rakhi.png" alt="" class="headerRakhi">
+        <h1 class="rakshaHeading">Rakshabandhan</h1>
+        <img src="https://i.ibb.co/b5dbD0y/thread.png" alt="thread" class="thread2 thread">
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="homeSecRakhi">
+                <img src="https://i.ibb.co/Yt0wYT5/rakhi-main.png" alt="Rakhi Image" class="homeSecRakhiMainPart">
+                <img src="https://i.ibb.co/z2GxWQL/thread-of-rakhi.png" alt="Rakhi Image" class="homeSecRakhiThread">
+            </div>
+            <h1 class="happyRakshaDay">Happy <span class="rakshabandhan">Rakshabandhan </span></h1>
+            <div class="wish">
+                <h2>My Wishes</h2>
+         <p>Dear online sisters, Happy Rakshabandhan!
+
+Your love and support light up my digital world.
+
+Thankful for our bond that grows stronger every day.
+
+Wishing you joy, strength, and endless blessings! Don't forget my sweets on this
+                    Rakshabandhan!</p>
+            </div>
+            <span class="myName">From RAJHARSH & SHIZUKA</span>
+
+            <form>
+                <h2 id="homeInfo">Next part for GIRLS (sisters) only</h2>
+                <div>
+                    <input type="checkbox" name="agree" id="agreeAsSister" required>
+                    <label for="agreeAsSister">I agree that I am a <span id="sister">Sister</span></label>
+                </div>
+                <button onclick="sisSpecialSec(event)" id="viewButton">View</button>
+            </form>
+        </section>
+
+        <section id="sisSpecial">
+            <h2>Click on hand to tie Rakhi</h2>
+            <img src="https://i.ibb.co/TmxkDGt/rakhi-in-hands.png" alt="Rakhi Image" id="rakhiInHand">
+            <img src="https://i.ibb.co/yPkR1QX/hand.png" alt="Hand Image" onclick="tieRakhi()" id="handImg">
+            <div class="giftPlusInfo">
+                <p>I can't let you go without your gift. Here is that gift... and yess don't forget my Sweets</p>
+                <a href="https://sololearn.com/compiler-playground/Wo758AtjebJb/?ref=app"><button id="yourGift">Your Gift</button></a>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="script.js"></script>
+<script>
+alert("FOR WHOM WHO DON'T KNOW WHAT IS RAKSHABANDHAN 👇 \n\n\n\nRaksha Bandhan is an Indian festival celebrated to symbolize the bond between a brother and sister. The sister ties a sacred thread, called a Rakhi, on her brother's wrist as a symbol of protection, and the brother vows to protect her. It's a day filled with love, gifts, and promises 😇😇");
+
+
+alert("Don't forget to scroll and get your gift");
+alert("Made with ♥️ by EAGLE YT & SHIZUKA")
+window.onload = function () {
+let isSis = document.getElementById("agreeAsSister");
+let viewButton = document.getElementById("viewButton");
+
+viewButton.disabled = true;
+
+isSis.addEventListener("click", () => {
+    viewButton.disabled = !viewButton.disabled
+});
+
+
+document.getElementById("yourGift").disabled = true;
+
+
+}
+function sisSpecialSec(event) {
+    event.preventDefault();
+    let isSure = confirm("Are you sure that you are a girl?? \nBoys are strictly prohibited");
+    if (isSure) {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("sisSpecial").style.display = "flex";
+        document.getElementById("sisSpecial").style.flexDirection = "column";
+        document.getElementById("sisSpecial").style.justifyContent = "center";
+        document.getElementById("sisSpecial").style.alignItems = "center";
+    }
+}
+
+function tieRakhi() {
+    document.getElementById("rakhiInHand").classList.toggle('active');
+    document.getElementById("yourGift").disabled = false;
+}
+</script>
+
+</html>
